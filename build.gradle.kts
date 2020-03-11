@@ -16,6 +16,8 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenCentral()
+    maven("https://oss.sonatype.org/content/repositories/snapshots")
 }
 
 dependencies {
@@ -24,6 +26,8 @@ dependencies {
 
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+    implementation("no.tornado:tornadofx:2.0.0-SNAPSHOT")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
@@ -34,5 +38,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClassName = "io.graab.AppKt"
+    mainClassName = "io.graab.HelloWorldAppKt"
 }
